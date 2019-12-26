@@ -54,7 +54,7 @@
         "<wait10><wait10><wait10>",
         "root<enter><wait5>",
         "{{user `root_password`}}<enter><wait5>",
-	"echo http://dl-cdn.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories<enter>",
+        "echo http://dl-cdn.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories<enter>",
         "apk add sudo<enter><wait5>",
         "echo 'Defaults env_keep += \"http_proxy https_proxy\"' > /etc/sudoers.d/wheel<enter>",
         "echo '%wheel ALL=(ALL) ALL' >> /etc/sudoers.d/wheel<enter>",
@@ -62,8 +62,8 @@
         "{{user `ssh_password`}}<enter><wait>",
         "{{user `ssh_password`}}<enter><wait>",
         "adduser {{user `ssh_username`}} wheel<enter><wait5>",
-	"apk add virtualbox-guest-additions virtualbox-guest-modules-virt<enter>",
-	"<wait10><wait10><wait10>"
+        "apk add virtualbox-guest-additions virtualbox-guest-modules-virt<enter>",
+        "<wait10><wait10><wait10>"
       ],
       "hard_drive_interface": "sata",
       "vboxmanage": [
